@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>McWeather 麥當勞天氣</title>
-    <link rel="icon" type="image/png" href="./icon-v2.png">
-    <link rel="apple-touch-icon" href="./icon-v2.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon-v2.png">
+    <link rel="icon" type="image/png" href="./FullMenuLogo.png">
+    <link rel="apple-touch-icon" href="./FullMenuLogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./FullMenuLogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap"
@@ -68,7 +68,7 @@
             font-weight: 900;
             font-size: 1.1rem;
             transform: rotate(-1deg);
-            border: 3px solid var(--mc-red);
+            border: 3px solid var(--mc-white);
             box-shadow: 3px 3px 0 var(--mc-dark-shadow);
             cursor: pointer;
             outline: none;
@@ -253,7 +253,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: var(--mc-red);
+            background: var(--mc-white); /* 🎯 背景改為白色 */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -262,18 +262,17 @@
         }
 
         /* 🌟 麥當勞 M 字形狀優化 CSS 🌟 */
+        /* 🎯 3. 替換 Logo CSS 為圖片顯示 */
         .mc-logo-container {
-            width: 100px;
-            height: 100px;
+            width: 120px; /* 調整容器大小以容納新圖片 */
+            height: 120px;
             position: relative;
-            /* 將 M 圖標置於中心 */
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
             animation: bounce 2s infinite;
         }
-
         .mc-arch {
             position: absolute;
             background-color: var(--mc-yellow);
